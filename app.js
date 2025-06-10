@@ -9,6 +9,7 @@ var usersRouter = require('./routes/users');
 var helloRouter = require('./routes/hello'); //5-2
 var notesRouter = require('./routes/notes'); //6-3
 var catRouter = require('./routes/cat');  //8-4
+var dogRouter = require('./routes/dog'); // 8-4 レポート
 
 var app = express();
 
@@ -27,6 +28,7 @@ app.use('/users', usersRouter);
 app.use('/hello', helloRouter); //5-2
 app.use('/notes', notesRouter); //6-3
 app.use('/cat', catRouter); //8-4
+app.use('/dog', dogRouter); //8-4 レポート
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
