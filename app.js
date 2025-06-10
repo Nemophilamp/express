@@ -8,7 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var helloRouter = require('./routes/hello'); //5-2
 var notesRouter = require('./routes/notes'); //6-3
-// コメント追加したのに何で変更なしなの？
+var catRouter = require('./routes/cat');  //8-4
 
 var app = express();
 
@@ -26,6 +26,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/hello', helloRouter); //5-2
 app.use('/notes', notesRouter); //6-3
+app.use('/cat', catRouter); //8-4
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
